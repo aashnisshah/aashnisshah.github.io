@@ -1,4 +1,6 @@
 import React from "react"
+import SocialLink from "./socialLink"
+import styled from "styled-components"
 import { github, instagram, linkedin, stackoverflow, twitter } from "../utils/images"
 
 const socialLinks = [
@@ -25,14 +27,24 @@ const socialLinks = [
   }
 ]
 
+const SocialUl = styled.ul`
+  list-style: none;
+  list-style-type: none;
+  margin: 0 0px;
+  padding: 0 0;
+  display: inline;
+`;
+
+const SocialLi = styled.li`
+  display: inline;
+`;
+
 const SocialLinks = () => (
-  <ul>
+  <SocialUl>
     {socialLinks.map(({title, link, image}, id) => {
-      return <li key={id}><a href={link} alt={title} rel="noopenner noreferrer">
-          <img src={image} alt={title} width="32px" height="32px" />
-        </a></li>
+      return <SocialLi key={id}><SocialLink link={link} title={title} image={image}/></SocialLi>
     })}
-  </ul>
+  </SocialUl>
 )
 
 export default SocialLinks
