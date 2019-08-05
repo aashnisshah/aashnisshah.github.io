@@ -1,9 +1,7 @@
-const colors = {
-  offblack: "##1D1313",
-  pink: "##D22042",
-  lightblue: "#30C4C9",
-  aquagreen: "#24B694",
-  brightgreen: "#A3B808"
-}
+const aquagreen = "#24B694";
+const brightgreen = "#A3B808";
+const lightblue = "#30C4C9";
+const offblack = "#1D1313";
+const pink = "#D22042";
 
-export default colors;
+export { aquagreen, brightgreen, lightblue, offblack, pink };

@@ -27,24 +27,20 @@ const socialLinks = [
   }
 ]
 
-const SocialUl = styled.ul`
+const SocialDiv = styled.div`
   list-style: none;
   list-style-type: none;
-  margin: 0 0px;
-  padding: 0 0;
-  display: inline;
-`;
-
-const SocialLi = styled.li`
-  display: inline;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 `;
 
 const SocialLinks = () => (
-  <SocialUl>
+  <SocialDiv>
     {socialLinks.map(({title, link, image}, id) => {
-      return <SocialLi key={id}><SocialLink link={link} title={title} image={image}/></SocialLi>
+      return <SocialLink key={id} link={link} title={title} image={image}/>
     })}
-  </SocialUl>
+  </SocialDiv>
 )
 
 export default SocialLinks
