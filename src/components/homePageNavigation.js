@@ -39,13 +39,14 @@ const NavigationUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
 `;
 
 const NavigationLi = styled.li`
   display: block;
   padding: 12px 0px;
   @media(min-width: ${phone}) {
-    display: inline;
+    display: inline-block;
   }
 `;
 

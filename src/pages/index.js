@@ -7,8 +7,14 @@ import { phone } from "../utils/breakpoints"
 const MainPage = styled.div`
   display: grid;
   place-items: center;
+  width: 100%;
   @media(min-width: ${phone}) {
     place-items: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 `;
 
