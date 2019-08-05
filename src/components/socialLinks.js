@@ -1,5 +1,5 @@
 import React from "react"
-import SocialLink from "./socialLink"
+import SocialLink from "./SocialLink"
 import styled from "styled-components"
 import { github, instagram, linkedin, stackoverflow, twitter } from "../utils/images"
 
